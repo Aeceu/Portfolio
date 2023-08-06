@@ -1,8 +1,14 @@
-import './globals.css'
+import NavBar from '@/components/NavBar'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import './globals.css'
+import { Toaster } from 'react-hot-toast'
+import { Ubuntu,Josefin_Sans } from 'next/font/google'
+import FootBar from '@/components/FootBar'
+import { ThemeProvider } from '@/context/ThemeContext'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Josefin_Sans({ 
+  subsets: ['latin'],
+  weight: "400" })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +22,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} dark:bg-black bg-white`}>
+          <div className='min-h-screen flex flex-col items-center justify-between  
+           gap-4 scroll-smooth relative'>
+            <NavBar/>
+            {children}
+            <FootBar/>    
+          </div>
+        <Toaster position='top-center'/>
+      </body>
     </html>
   )
 }
