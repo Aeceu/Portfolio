@@ -2,9 +2,8 @@ import NavBar from '@/components/NavBar'
 import type { Metadata } from 'next'
 import './globals.css'
 import { Toaster } from 'react-hot-toast'
-import { Ubuntu,Josefin_Sans } from 'next/font/google'
+import { Josefin_Sans } from 'next/font/google'
 import FootBar from '@/components/FootBar'
-import { ThemeProvider } from '@/context/ThemeContext'
 
 const inter = Josefin_Sans({ 
   subsets: ['latin'],
@@ -22,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} dark:bg-black bg-white`}>
+      <body className={`${inter.className} dark:dark light dark:bg-black bg-white`}>
           <div className='min-h-screen flex flex-col items-center justify-between  
            gap-4 scroll-smooth relative'>
             <NavBar/>

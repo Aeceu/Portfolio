@@ -28,7 +28,7 @@ const links = [
 export default function NavBar() {
   return (
     <nav
-    className='w-3/4 py-5 px-4 flex justify-between items-center fixed top-0
+    className='w-3/4 py-5 px-4 flex justify-between items-center fixed top-0 z-50
        bg-black text-white dark:text-black dark:bg-white shadow-custom dark:shadow-light'>
         <div className='flex gap-2'>
             {links.map((link,i)=>(

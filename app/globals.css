@@ -97,11 +97,18 @@ html {
   border-radius: 100px;
 }
 
-::selection {
+body {
+  transition: 1s all ease-in-out;
+}
+
+/* For light mode ::selection styles */
+.light ::selection {
   color: white;
   background-color: black;
 }
 
-body {
-  transition: 1s all ease-in-out;
+/* For dark mode ::selection styles */
+.dark ::selection {
+  color: black;
+  background-color: white;
 }
