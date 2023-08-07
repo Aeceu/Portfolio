@@ -38,12 +38,13 @@ export default function NavBar() {
                     initial={{opacity:0,y:-75}}
                     animate={{opacity:1,y:0,
                     transition:{delay:link.delay}
-                    }}>
+                    }}
+                    className='hover:animate-up-down'>
                     <Link href={link.url}>{link.tag}</Link>    
                 </motion.span>
             ))} 
         </div>
-        <div className='flex gap-2 items-center ' >
+        <div className='flex gap-4 items-center ' >
             <ThemeToggle/>
             <motion.button
                 initial={{opacity:0,y:-75}}

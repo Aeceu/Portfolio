@@ -88,12 +88,21 @@ html {
   width: 5px;
 }
 
-::-webkit-scrollbar-track {
+.light::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-::-webkit-scrollbar-thumb {
+.light::-webkit-scrollbar-thumb {
   background-color: rgb(0, 0, 0, 0.7);
+  border-radius: 100px;
+}
+
+.dark::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.dark::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
   border-radius: 100px;
 }
 
@@ -101,14 +110,7 @@ body {
   transition: 1s all ease-in-out;
 }
 
-/* For light mode ::selection styles */
-.light ::selection {
-  color: white;
-  background-color: black;
-}
-
-/* For dark mode ::selection styles */
-.dark ::selection {
-  color: black;
-  background-color: white;
+::selection {
+  color: #f4f5fa;
+  background-color: #e97451;
 }

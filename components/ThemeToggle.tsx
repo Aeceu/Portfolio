@@ -20,10 +20,10 @@ export default function ThemeToggle() {
 
   return (
     <DelayOnReveal>
-        <div className="flex gap-2 items-center cursor-pointer hover:scale-125" onClick={toggle}>       
+        <div className="flex gap-2 items-center cursor-pointer hover:scale-125 hover:animate-up-down transition-all" onClick={toggle}>       
         {theme === 'dark' 
-            ? <BiSolidMoon size="1.2em" />
-            :  <BiSolidSun size="1.2em" />
+            ? <BiSolidMoon size="1.7em" />
+            :  <BiSolidSun size="1.7em" />
         }
         </div>
     </DelayOnReveal>

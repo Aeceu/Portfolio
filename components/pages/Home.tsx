@@ -6,10 +6,10 @@ import Image from 'next/image'
 
 export default function Homepage() {
   return (
-    <div  id="home-page" className='w-full min-h-screen flex gap-6 items-center justify-center '>
+    <div  id="home-page" className='w-4/5 min-h-screen flex gap-3 items-center justify-center '>
       <Header/>
       <span className='w-1 h-[200px] rounded-full border-2 dark:border-white border-black'></span>
-      <Appear delay={.4} className='w-[300px] h-[300px] flex items-center justify-center
+      <Appear delay={.4} className='w-1/2 h-[300px] flex items-center justify-center
       dark:shadow-light shadow-custom dark:bg-white bg-black'>
         <Image
         src="/image.svg"

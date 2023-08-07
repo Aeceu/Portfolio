@@ -29,7 +29,8 @@ export default function FootBar() {
                 </Link>    
                 </motion.span>
             </HoverCardTrigger>
-            <HoverCardContent className='w-max px-4 py-1 bg-black shadow-custom text-white flex items-center justify-center'>
+            <HoverCardContent className='w-max px-4 py-1 flex items-center justify-center
+            text-white bg-black shadow-custom dark:text-black dark:bg-white dark:shadow-light'>
                 <h1 className='text-sm'>Home</h1>
             </HoverCardContent>
         </HoverCard>
@@ -47,7 +48,8 @@ export default function FootBar() {
                 </Link>    
                 </motion.span>
             </HoverCardTrigger>
-            <HoverCardContent className='w-max px-4 py-1 bg-black shadow-custom text-white flex items-center justify-center'>
+            <HoverCardContent className='w-max px-4 py-1 flex items-center justify-center
+            text-white bg-black shadow-custom dark:text-black dark:bg-white dark:shadow-light'>
                     <h1 className='text-sm'>Technology</h1>
             </HoverCardContent>
         </HoverCard>
@@ -65,7 +67,8 @@ export default function FootBar() {
                 </Link>    
             </motion.span>
             </HoverCardTrigger>
-            <HoverCardContent className='w-max px-4 py-1 bg-black shadow-custom text-white flex items-center justify-center'>
+            <HoverCardContent className='w-max px-4 py-1 flex items-center justify-center
+            text-white bg-black shadow-custom dark:text-black dark:bg-white dark:shadow-light'>
                     <h1 className='text-sm'>Projects</h1>
             </HoverCardContent>
         </HoverCard>

@@ -11,7 +11,7 @@ interface Props{
 
 export default function DelayOnReveal({delay,children,className}:Props) {
   const ref = useRef(null);
-  const isInView = useInView(ref,{once:true});
+  const isInView = useInView(ref);
   const mainControls = useAnimation();
   const slideControls = useAnimation();
   
@@ -46,15 +46,7 @@ export default function DelayOnReveal({delay,children,className}:Props) {
         initial="hidden"
         animate={slideControls}
         transition={{ duration: 0.3, ease: "easeIn" }}
-        style={{
-          position: "absolute",
-          top: 4,
-          bottom: 4,
-          left: 0,
-          right: 0,
-          background: "rgb(0,0,0)",
-          zIndex: 20,
-        }}
+        className='absolute top-[4px] bottom-[4px] right-0 left-0 z-20 dark:bg-white bg-black'
       />
     </div>
   )
