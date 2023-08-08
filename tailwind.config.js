@@ -77,7 +77,7 @@ module.exports = {
       },
       boxShadow:{
         'custom': "6px 6px 0px rgba(0,0,0,.4)",
-        'light':"6px 6px 0px rgba(255,255,255,.4)",
+        'light':"6px 6px 0px rgba(16, 185, 129, .9)",
         
       },
     },

@@ -66,7 +66,7 @@ export default function Techpage() {
         animate={{opacity:1,x:0}}
         className='h-1 w-[530px] rounded-full border-2 dark:border-white border-black'></motion.span>
 
-        <LogoLink/>
+        {/* <LogoLink/> */}
     </div>
   )
 }

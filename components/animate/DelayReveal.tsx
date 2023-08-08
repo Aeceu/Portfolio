@@ -46,7 +46,7 @@ export default function DelayOnReveal({delay,children,className}:Props) {
         initial="hidden"
         animate={slideControls}
         transition={{ duration: 0.3, ease: "easeIn" }}
-        className='absolute top-[4px] bottom-[4px] right-0 left-0 z-20 dark:bg-white bg-black'
+        className='absolute top-[4px] bottom-[4px] right-0 left-0 z-20 bg-emerald-500'
       />
     </div>
   )

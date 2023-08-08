@@ -11,35 +11,35 @@ import ThemeToggle from './ThemeToggle'
 const links = [
     {
         url:"https://github.com/kaneki081",
-        tag: <AiFillGithub size="1.7rem"/>,
+        tag: <AiFillGithub size="1.6rem"/>,
         delay:.2
     },
     {
         url:"https://www.linkedin.com/in/jose-acebuche-4a5b851b5/",
-        tag: <AiFillLinkedin size="1.7rem"/>,
+        tag: <AiFillLinkedin size="1.6rem"/>,
         delay:.3   
     },
     {
         url:"https://www.facebook.com/Aeceuuu",
-        tag: <AiFillFacebook size="1.7rem"/>,
+        tag: <AiFillFacebook size="1.6rem"/>,
         delay:.4   
     },  
 ]
 export default function NavBar() {
   return (
     <nav
-    className='w-3/4 py-5 px-4 flex justify-between items-center fixed top-0 z-50
-       bg-black text-white dark:text-black dark:bg-white shadow-custom dark:shadow-light'>
-        <div className='flex gap-2'>
+    className='sticky top-0 w-full p-4 flex justify-between  items-center  z-50
+    dark:text-white text-slate-950 dark:bg-slate-950/70 bg-opacity-5 bg-white/70 '>
+        <div className='flex gap-4'>
             {links.map((link,i)=>(
                 <motion.span
+                    whileHover={{color:'rgb(16 185 129)'}}
                     key={i}
-                    whileHover={{scale:1.2,y:-3}}
                     initial={{opacity:0,y:-75}}
                     animate={{opacity:1,y:0,
                     transition:{delay:link.delay}
                     }}
-                    className='hover:animate-up-down'>
+                    className=''>
                     <Link href={link.url}>{link.tag}</Link>    
                 </motion.span>
             ))} 
@@ -51,7 +51,7 @@ export default function NavBar() {
                 animate={{opacity:1,y:0}}
                 transition={{delay:.1}}
                 className='border-2 px-4 py-1 
-                dark:border-black border-white hover:animate-up-down'>
+                 border-emerald-500  hover:animate-up-down'>
                 My Resume
             </motion.button>
         </div>

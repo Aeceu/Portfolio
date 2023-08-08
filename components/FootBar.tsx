@@ -11,22 +11,33 @@ import {
     HoverCardTrigger
 } from "@/components/ui/hover-card"
 
-export default function FootBar() {
+export default function AsideBar() {
   return (
-    <div className=' rounded-full p-4 flex gap-4 items-center fixed bottom-2 z-50
-    text-white bg-black shadow-custom dark:text-black dark:bg-white dark:shadow-light' >
-        <HoverCard>
+    <motion.div
+     initial={{opacity:0,x:"-100vw"}}
+     animate={{opacity:1,x:0}}
+     transition={{duration:.7}}
+     className='sticky top-0 h-full px-2 py-8 flex flex-col gap-16 items-center  
+    text-white dark:text-slate-950 
+    bg-slate-950 dark:bg-white shadow-light w-[50px] ' >
+        <Link href="#home-page" className='flex gap-1 items-center rotate-90 hover:text-emerald-500 hover:scale-125'>
+            Home
+        </Link>  
+        <Link href="#tech-page"  className='flex gap-1 items-center rotate-90 hover:text-emerald-500 hover:scale-125'>
+            Technologies
+        </Link>
+        <Link href="#project-page"  className='flex gap-1 items-center rotate-90 hover:text-emerald-500 hover:scale-125'>
+            Projects
+        </Link> 
+        {/* <HoverCard>
             <HoverCardTrigger asChild>
                 <motion.span
-                whileFocus={{scale:1.2,y:-3}}
-                whileHover={{scale:1.2,y:-3}}
+                whileHover={{scale:1.2,color:'rgb(16 185 129)'}}
                 initial={{opacity:0,y:75}}
                 animate={{opacity:1,y:0,
-                    transition:{delay:.2}
+                    transition:{delay:.8}
                 }}>
-                <Link href="#home-page" className='flex gap-1 items-center'>
-                    <AiFillHome size="1.5rem"/>
-                </Link>    
+                  
                 </motion.span>
             </HoverCardTrigger>
             <HoverCardContent className='w-max px-4 py-1 flex items-center justify-center
@@ -38,14 +49,12 @@ export default function FootBar() {
         <HoverCard>
             <HoverCardTrigger asChild>
                 <motion.span
-                whileHover={{scale:1.2,y:-3}}
+                whileHover={{scale:1.2,color:'rgb(16 185 129)'}}
                 initial={{opacity:0,y:75}}
                 animate={{opacity:1,y:0,
-                    transition:{delay:.3}
+                    transition:{delay:.9}
                 }}>
-                <Link href="#tech-page"  className='flex gap-1 items-center'>
-                    <GiTechnoHeart size="1.5rem"/>
-                </Link>    
+                    
                 </motion.span>
             </HoverCardTrigger>
             <HoverCardContent className='w-max px-4 py-1 flex items-center justify-center
@@ -57,22 +66,19 @@ export default function FootBar() {
         <HoverCard>
             <HoverCardTrigger asChild>
             <motion.span
-                whileHover={{scale:1.2,y:-3}}
+                whileHover={{scale:1.2,color:'rgb(16 185 129)'}}
                 initial={{opacity:0,y:75}}
                 animate={{opacity:1,y:0,
-                    transition:{delay:.4}
+                    transition:{delay:1}
                 }}>
-                <Link href="#project-page"  className='flex gap-1 items-center'>
-                    <AiFillProject size="1.5rem"/>
-                </Link>    
+                   
             </motion.span>
             </HoverCardTrigger>
             <HoverCardContent className='w-max px-4 py-1 flex items-center justify-center
             text-white bg-black shadow-custom dark:text-black dark:bg-white dark:shadow-light'>
                     <h1 className='text-sm'>Projects</h1>
             </HoverCardContent>
-        </HoverCard>
-     
-    </div>   
+        </HoverCard> */}
+    </motion.div>   
   )
 }

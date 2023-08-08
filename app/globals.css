@@ -82,6 +82,9 @@ html {
   scrollbar-width: thin;
   scroll-behavior: smooth;
   scrollbar-color: black;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 ::-webkit-scrollbar {
@@ -111,6 +114,6 @@ body {
 }
 
 ::selection {
-  color: #f4f5fa;
-  background-color: #e97451;
+  color: black;
+  background-color: rgb(16 185 129);
 }
