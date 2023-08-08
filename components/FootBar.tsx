@@ -17,68 +17,22 @@ export default function AsideBar() {
      initial={{opacity:0,x:"-100vw"}}
      animate={{opacity:1,x:0}}
      transition={{duration:.7}}
-     className='sticky top-0 h-full px-2 py-8 flex flex-col gap-16 items-center  
+     className='sticky top-0 h-screen px-2 py-8 flex flex-col items-center  
     text-white dark:text-slate-950 
-    bg-slate-950 dark:bg-white shadow-light w-[50px] ' >
-        <Link href="#home-page" className='flex gap-1 items-center rotate-90 hover:text-emerald-500 hover:scale-125'>
+    bg-slate-950 dark:bg-white shadow-green-md w-[50px] ' >
+        <Link href="#home-page" className='transition-all rotate-90 hover:text-emerald-500 hover:scale-125 my-4'>
             Home
         </Link>  
-        <Link href="#tech-page"  className='flex gap-1 items-center rotate-90 hover:text-emerald-500 hover:scale-125'>
+        <Link href="#project-page"  className='transition-all rotate-90 hover:text-emerald-500 hover:scale-125 my-8'>
+            About
+        </Link>
+        <Link href="#tech-page"  className='transition-all rotate-90 hover:text-emerald-500 hover:scale-125 my-9'>
             Technologies
         </Link>
-        <Link href="#project-page"  className='flex gap-1 items-center rotate-90 hover:text-emerald-500 hover:scale-125'>
+        <Link href="#project-page"  className='transition-all rotate-90 hover:text-emerald-500 hover:scale-125 my-8'>
             Projects
         </Link> 
-        {/* <HoverCard>
-            <HoverCardTrigger asChild>
-                <motion.span
-                whileHover={{scale:1.2,color:'rgb(16 185 129)'}}
-                initial={{opacity:0,y:75}}
-                animate={{opacity:1,y:0,
-                    transition:{delay:.8}
-                }}>
-                  
-                </motion.span>
-            </HoverCardTrigger>
-            <HoverCardContent className='w-max px-4 py-1 flex items-center justify-center
-            text-white bg-black shadow-custom dark:text-black dark:bg-white dark:shadow-light'>
-                <h1 className='text-sm'>Home</h1>
-            </HoverCardContent>
-        </HoverCard>
-
-        <HoverCard>
-            <HoverCardTrigger asChild>
-                <motion.span
-                whileHover={{scale:1.2,color:'rgb(16 185 129)'}}
-                initial={{opacity:0,y:75}}
-                animate={{opacity:1,y:0,
-                    transition:{delay:.9}
-                }}>
-                    
-                </motion.span>
-            </HoverCardTrigger>
-            <HoverCardContent className='w-max px-4 py-1 flex items-center justify-center
-            text-white bg-black shadow-custom dark:text-black dark:bg-white dark:shadow-light'>
-                    <h1 className='text-sm'>Technology</h1>
-            </HoverCardContent>
-        </HoverCard>
-
-        <HoverCard>
-            <HoverCardTrigger asChild>
-            <motion.span
-                whileHover={{scale:1.2,color:'rgb(16 185 129)'}}
-                initial={{opacity:0,y:75}}
-                animate={{opacity:1,y:0,
-                    transition:{delay:1}
-                }}>
-                   
-            </motion.span>
-            </HoverCardTrigger>
-            <HoverCardContent className='w-max px-4 py-1 flex items-center justify-center
-            text-white bg-black shadow-custom dark:text-black dark:bg-white dark:shadow-light'>
-                    <h1 className='text-sm'>Projects</h1>
-            </HoverCardContent>
-        </HoverCard> */}
+         
     </motion.div>   
   )
 }

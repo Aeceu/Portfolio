@@ -4,10 +4,10 @@ import Projectspage from "@/components/pages/Projects";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col justify-center items-center scroll-smooth">
+    <div className="w-full">
       <Homepage />
       <Techpage />
       <Projectspage />
-    </main>
+    </div>
   )
 }

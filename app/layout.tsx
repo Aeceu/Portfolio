@@ -23,14 +23,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} dark:dark light dark:bg-slate-950`}>
           <div className='min-h-screen flex  justify-between  
-           gap-2 scroll-smooth relative'>  
+            scroll-smooth relative '>  
             <AsideBar/>
-            <main className='w-full relative'>
-              <NavBar/>
+            <main className='w-full  flex flex-col items-center'>
               {children}  
             </main>
           </div>
-        <Toaster position='top-center'/>
       </body>
     </html>
   )

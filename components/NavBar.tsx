@@ -28,8 +28,8 @@ const links = [
 export default function NavBar() {
   return (
     <nav
-    className='sticky top-0 w-full p-4 flex justify-between  items-center  z-50
-    dark:text-white text-slate-950 dark:bg-slate-950/70 bg-opacity-5 bg-white/70 '>
+    className=' h-[80px] px-4 flex justify-between  items-center  
+    dark:text-white text-slate-950   '>
         <div className='flex gap-4'>
             {links.map((link,i)=>(
                 <motion.span
@@ -51,7 +51,7 @@ export default function NavBar() {
                 animate={{opacity:1,y:0}}
                 transition={{delay:.1}}
                 className='border-2 px-4 py-1 
-                 border-emerald-500  hover:animate-up-down'>
+                dark:border-white  border-slate-950 shadow-green-sm   hover:animate-up-down'>
                 My Resume
             </motion.button>
         </div>

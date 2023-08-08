@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -82,6 +86,9 @@ html {
   scrollbar-width: thin;
   scroll-behavior: smooth;
   scrollbar-color: black;
+}
+
+html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -111,9 +118,4 @@ html {
 
 body {
   transition: 1s all ease-in-out;
-}
-
-::selection {
-  color: black;
-  background-color: rgb(16 185 129);
 }

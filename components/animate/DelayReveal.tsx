@@ -35,6 +35,7 @@ export default function DelayOnReveal({delay,children,className}:Props) {
         }}
         initial="hidden"
         animate={mainControls}
+        className='flex items-center gap-2'
         >
         {children}
       </motion.h1>
