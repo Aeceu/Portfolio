@@ -1,30 +1,18 @@
-'use client'
-import { motion } from 'framer-motion'
 import React from 'react'
-import Appear from '../animate/appear'
 import DelayOnReveal from '../animate/DelayReveal'
-
+import Divider from '../animate/divider'
 
 export default function Projectspage() {
   return (
-    <div id="project-page" className='w-full min-h-screen flex items-center justify-center'>
-        <div className="p-8 w-max  ">
+    <div id="project-page" className="relative min-h-screen flex flex-col items-center p-4 gap-8">
+         <div className='w-full flex items-center justify-end'>
           <DelayOnReveal
             delay={.2}
-            className="text-8xl font-extrabold">
+            className="relative pr-4 flex text-8xl font-extrabold text-emerald-500 mb-4 dark:[text-shadow:5px_5px_0_rgb(255_255_255_)] [text-shadow:5px_5px_0_rgb(2_6_23_)] z-50 bg-white dark:bg-slate-950">
             Projects
-          </DelayOnReveal>
-          <DelayOnReveal
-            delay={.3}
-            className="text-xl">
-            I am a Full Stack Developer 🚀
-          </DelayOnReveal>
-          <DelayOnReveal
-            delay={.4}
-            className="text-lg">
-            Full time developer in Typescript, Next-JS, TailwindCSS
-          </DelayOnReveal>
-        </div>
+          </DelayOnReveal>       
+          <Divider/>
+      </div>
     </div>
   )
 }

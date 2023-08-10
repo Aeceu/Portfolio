@@ -4,7 +4,7 @@ import {BiSolidSun,BiSolidMoon} from "react-icons/bi"
 import DelayOnReveal from "@/components/animate/DelayReveal"
 
 export default function ThemeToggle() {
-  const [theme,setTheme] = useState("light")
+  const [theme,setTheme] = useState("dark")
 
   const toggle = () =>{
     setTheme((prev => prev === 'dark' ? 'light' : 'dark'))

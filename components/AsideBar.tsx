@@ -23,7 +23,7 @@ export default function AsideBar() {
         <Link href="#home-page" className='transition-all rotate-90 hover:text-emerald-500 hover:scale-125 my-4'>
             Home
         </Link>  
-        <Link href="#project-page"  className='transition-all rotate-90 hover:text-emerald-500 hover:scale-125 my-8'>
+        <Link href="#about-page"  className='transition-all rotate-90 hover:text-emerald-500 hover:scale-125 my-8'>
             About
         </Link>
         <Link href="#tech-page"  className='transition-all rotate-90 hover:text-emerald-500 hover:scale-125 my-9'>

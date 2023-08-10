@@ -1,9 +1,8 @@
-import NavBar from '@/components/NavBar'
 import type { Metadata } from 'next'
 import './globals.css'
-import { Toaster } from 'react-hot-toast'
+// import { Toaster } from 'react-hot-toast'
 import { Josefin_Sans } from 'next/font/google'
-import AsideBar from '@/components/FootBar'
+import AsideBar from '@/components/AsideBar'
 
 const inter = Josefin_Sans({ 
   subsets: ['latin'],
