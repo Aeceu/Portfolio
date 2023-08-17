@@ -21,7 +21,7 @@ export default function AboutPage() {
         <Divider />
       </div>
       <div className="w-full text-justify flex flex-col gap-4">
-        <DelayOnReveal>
+        <DelayOnReveal className="flex items-center">
           I am <span className="text-emerald-500">Jose Acebuche</span>. A
           Software Engineer and Full-Stack Developer in the Phillipines. Lorem
           ipsum dolor sit, amet consectetur adipisicing elit. Inventore

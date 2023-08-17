@@ -4,7 +4,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import { useRef } from "react";
 
 interface Props {
-  children: React.ReactNode | string;
+  children: React.ReactNode;
   className?: string;
   delay?: number;
 }
@@ -38,7 +38,7 @@ export default function DelayOnReveal({ delay, children, className }: Props) {
         }}
         initial="hidden"
         animate={mainControls}
-        className="flex items-center gap-2"
+        className=""
       >
         {children}
       </motion.h1>
