@@ -4,7 +4,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import { useRef } from "react";
 
 interface Props {
-  children: JSX.Element | JSX.Element[];
+  children: React.ReactNode;
   className?: string;
   delay?: number;
 }

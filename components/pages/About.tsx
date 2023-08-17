@@ -21,15 +21,15 @@ export default function AboutPage() {
         <Divider />
       </div>
       <div className="w-full text-justify flex flex-col gap-4">
-        <p>
+        <DelayOnReveal>
           I am <span className="text-emerald-500">Jose Acebuche</span>. A
           Software Engineer and Full-Stack Developer in the Phillipines. Lorem
           ipsum dolor sit, amet consectetur adipisicing elit. Inventore
           architecto totam dolorum temporibus suscipit dignissimos nulla
           consequuntur, minima officiis est eius molestias repudiandae eum, rem
           id similique, fugit sed numquam.
-        </p>
-        <p>
+        </DelayOnReveal>
+        <DelayOnReveal>
           I am a{" "}
           <span className="text-emerald-500 ">
             full stack developer and software engineer{" "}
@@ -39,8 +39,8 @@ export default function AboutPage() {
           initial exploration of coding languages and algorithms to my present
           drive to develop impactful applications, my journey has been marked by
           a commitment to enhancing lives through technology.
-        </p>
-        <p>
+        </DelayOnReveal>
+        <DelayOnReveal>
           My satisfaction grows as I turn concepts into functional applications.
           Whether I am engrossed in{" "}
           <span className="text-emerald-500">
@@ -55,7 +55,7 @@ export default function AboutPage() {
           skills. Join me in this exhilarating journey of innovation and
           creativity, connecting with fellow developers and contributing to the
           global tech community.
-        </p>
+        </DelayOnReveal>
       </div>
     </div>
   );
