@@ -50,7 +50,7 @@ export default function NavBar() {
           className="border-2 px-4 py-1 
                 dark:border-white  border-slate-950 shadow-green-sm   hover:animate-up-down"
         >
-          My Resume
+          <a href="/Jose.Acebuche.RESUME.pdf">My Resume</a>
         </motion.button>
       </div>
     </nav>

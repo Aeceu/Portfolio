@@ -21,6 +21,12 @@ export default function Projectspage() {
         </DelayOnReveal>
         <Divider />
       </div>
+      <div
+        className="text-emerald-500 rounded-md 
+    bg-slate-950 dark:bg-white shadow-green-md w-[600px] h-[300px] flex items-center justify-center font-bold text-4xl"
+      >
+        Not yet added {":(("}
+      </div>
     </div>
   );
 }
