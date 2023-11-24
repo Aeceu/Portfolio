@@ -7,7 +7,7 @@ import ThemeToggle from "./ThemeToggle";
 
 const links = [
   {
-    url: "https://github.com/kaneki081",
+    url: "https://github.com/Aeceu",
     tag: <AiFillGithub size="1.6rem" />,
     delay: 0.2,
   },
