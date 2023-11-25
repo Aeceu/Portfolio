@@ -10,8 +10,6 @@ export default function Divider() {
   useEffect(() => {
     if (isInView) {
       mainControls.start("visible");
-    } else {
-      mainControls.start("hidden");
     }
   }, [isInView, mainControls]);
 

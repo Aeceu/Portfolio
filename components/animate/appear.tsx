@@ -11,7 +11,7 @@ interface Props {
 
 export default function Appear({ delay, children, className }: Props) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref);
   const mainControls = useAnimation();
 
   useEffect(() => {

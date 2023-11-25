@@ -26,7 +26,7 @@ export default function Techpage() {
 
       <div className=" flex flex-col lg:flex-row justify-between items-center lg:px-8 gap-8">
         <TechLogos />
-        <div className="">
+        <div className="lg:w-[70%]">
           <div>
             <div className="flex items-center">
               <h1 className="relative z-50 pr-6 bg-white dark:bg-slate-950 text-emerald-500 font-bold">
@@ -35,25 +35,15 @@ export default function Techpage() {
               <span className="w-[95%] border-[1px] rounded-full border-zinc-500/70 absolute " />
             </div>
             <DelayOnReveal>
-              I have been coding for 2 years. In this years, I dedicated myself
-              learning and adopting to the latest technologies out there in the
-              market. I have been practicing and improving my coding skills
-              through this years for better and best code.
-            </DelayOnReveal>
-          </div>
-
-          <div>
-            <div className="flex items-center">
-              <h1 className="relative z-50 pr-6 bg-white dark:bg-slate-950 text-emerald-500 font-bold">
-                Percentage
-              </h1>
-              <span className="w-[95%] border-[1px] rounded-full border-zinc-500/70 absolute " />
-            </div>
-            <DelayOnReveal>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-              quaerat molestias eum distinctio laborum, placeat sequi earum
-              cupiditate provident vero quas repellat id praesentium a
-              perferendis corporis! Minima, nisi sed.
+              Over the past <b className="text-emerald-500">three years</b>, I
+              have immersed myself in the dynamic world of coding, dedicating my
+              efforts to mastering and embracing the latest technologies
+              prevalent in the market. Throughout this journey, I have
+              consistently honed and elevated my coding skills, striving for
+              continuous improvement to produce code of the highest quality. My
+              commitment to staying abreast of cutting-edge developments
+              reflects my passion for staying at the forefront of technological
+              advancements and delivering optimal solutions.
             </DelayOnReveal>
           </div>
         </div>

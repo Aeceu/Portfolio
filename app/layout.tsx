@@ -4,10 +4,7 @@ import "./globals.css";
 import { Josefin_Sans } from "next/font/google";
 import AsideBar from "@/components/AsideBar";
 
-const inter = Josefin_Sans({
-  subsets: ["latin"],
-  weight: "400",
-});
+const JosefinSans = Josefin_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Jose Acebuche",
@@ -21,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} dark:dark light dark:bg-slate-950`}>
+      <body
+        className={`${JosefinSans.className} dark:dark light dark:bg-slate-950`}
+      >
         <div
           className="min-h-screen flex  justify-between  
             scroll-smooth relative "

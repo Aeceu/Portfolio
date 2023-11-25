@@ -19,9 +19,6 @@ export default function DelayOnReveal({ delay, children, className }: Props) {
     if (isInView) {
       mainControls.start("visible");
       slideControls.start("visible");
-    } else {
-      mainControls.start("hidden");
-      slideControls.start("hidden");
     }
   }, [isInView, mainControls, slideControls]);
 
