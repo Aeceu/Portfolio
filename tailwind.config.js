@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -65,23 +65,27 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
-        "beating":{
-          from:{transform:"scale(1.05)"},
-          to:{transform:"scale(1)"},
-        }
+        beating: {
+          from: { transform: "scale(1.05)" },
+          to: { transform: "scale(1)" },
+        },
+        move: {
+          from: { transform: "translateY(-10px)" },
+          to: { transform: "translateY(10px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "up-down":"beating .5s infinite ease alternate"
+        "up-down": "beating .5s infinite ease alternate",
+        moving: "move 3s infinite ease alternate;",
       },
-      boxShadow:{
-        'custom': "6px 6px 0px rgba(2, 6, 23,.7)",
-        'green-sm':"3px 3px 0px rgba(16, 185, 129, .9)",
-        'green-md':"6px 6px 0px rgba(16, 185, 129, .9)",
+      boxShadow: {
+        custom: "6px 6px 0px rgba(2, 6, 23,.7)",
+        "green-sm": "3px 3px 0px rgba(16, 185, 129, .9)",
+        "green-md": "6px 6px 0px rgba(16, 185, 129, .9)",
       },
-      
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

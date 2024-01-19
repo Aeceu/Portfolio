@@ -11,7 +11,7 @@ export default function Homepage() {
       className="relative min-h-screen flex flex-col items-center "
     >
       <NavBar />
-      {/* <BlackGradient/> */}
+      <BlackGradient />
       <Header />
     </div>
   );
