@@ -25,7 +25,7 @@ export default function Projectspage() {
         <Divider />
       </div>
 
-      <div className="grid grid-cols-2 gap-4 place-items-center w-full h-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center w-full h-full">
         {/* Travel Wander */}
         <div className="z-50 relative w-[600px] h-[300px] overflow-hidden flex flex-col rounded-md bg-[url(/travel-wander/2.png)] bg-cover bg-center">
           <div
