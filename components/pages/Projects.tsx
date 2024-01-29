@@ -27,7 +27,7 @@ export default function Projectspage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center w-full h-full">
         {/* Travel Wander */}
-        <div className="z-50 relative w-[600px] h-[300px] overflow-hidden flex flex-col rounded-md bg-[url(/travel-wander/2.png)] bg-cover bg-center">
+        <div className="z-50 relative w-full h-[300px] overflow-hidden flex flex-col rounded-md bg-[url(/travel-wander/2.png)] bg-cover bg-center">
           <div
             className="hover:-bottom-0 transition-all duration-300
         absolute -bottom-20
@@ -52,7 +52,7 @@ export default function Projectspage() {
         </div>
 
         {/* Rehabify */}
-        <div className="z-50 relative w-[600px] h-[300px] overflow-hidden flex flex-col rounded-md bg-[url(/rehabify/1.png)] bg-cover bg-center">
+        <div className="z-50 relative w-full h-[300px] overflow-hidden flex flex-col rounded-md bg-[url(/rehabify/1.png)] bg-cover bg-center">
           <div
             className="hover:-bottom-0 transition-all duration-300
         absolute -bottom-20
@@ -77,7 +77,7 @@ export default function Projectspage() {
         </div>
 
         {/* Bubble Sort Visualizer */}
-        <div className="z-50 relative w-[600px] h-[300px] overflow-hidden flex flex-col rounded-md bg-[url(/bubble-sort/1.png)] bg-cover bg-center">
+        <div className="z-50 relative w-full h-[300px] overflow-hidden flex flex-col rounded-md bg-[url(/bubble-sort/1.png)] bg-cover bg-center">
           <div
             className="hover:-bottom-0 transition-all duration-300
         absolute -bottom-20

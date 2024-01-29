@@ -22,7 +22,7 @@ export default function AboutPage() {
         <Divider />
       </div>
       <div className="w-full flex md:flex-row flex-col items-center gap-2">
-        <div className="w-1/2 text-justify flex flex-col gap-4">
+        <div className="w-full md:w-1/2 text-justify flex flex-col gap-4">
           <DelayOnReveal className="flex items-center">
             I&apos;m Jose Acebuche, a Software Engineer, and Full-Stack
             Developer based in the Philippines. My journey in the realm of
@@ -51,7 +51,7 @@ export default function AboutPage() {
             tech community, and shape the future of technology together.
           </DelayOnReveal>
         </div>
-        <div className="w-1/2 flex items-center justify-center h-full">
+        <div className="w-full md:w-1/2 flex items-center justify-center h-full">
           <Image
             src={"/img.svg"}
             alt="img"
