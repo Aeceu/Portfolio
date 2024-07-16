@@ -6,7 +6,7 @@ import BlackGradient from "../bg_gradient/black_gradient";
 
 export default function Homepage() {
   return (
-    <div id="home-page" className="relative h-screen flex flex-col items-center ">
+    <div id="home-page" className="relative h-screen flex flex-col items-center overflow-x-hidden">
       <NavBar />
       <BlackGradient />
       <Header />
