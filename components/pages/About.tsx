@@ -51,7 +51,7 @@ export default function AboutPage() {
             technology together.
           </DelayOnReveal>
         </div>
-        <div className="shrink-0 w-[100px] h-[100px] lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden animate-moving">
+        <div className="shrink-0 w-[150] h-[150] lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden animate-moving">
           <Image
             src={"/1x1.jpg"}
             alt="img"
