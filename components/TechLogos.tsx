@@ -60,11 +60,6 @@ export default function TechLogos() {
       desc: "A utility-first CSS framework that streamlines the process of designing and styling websites.",
     },
     {
-      url: "/tech/mongodb.svg",
-      name: "MongoDB",
-      desc: "A popular NoSQL database that uses a document-oriented data model.",
-    },
-    {
       url: "/tech/next-auth.png",
       name: "NextAuth.js",
       desc: "A library that simplifies the implementation of authentication and authorization in Next.js applications.",
@@ -78,6 +73,11 @@ export default function TechLogos() {
       url: "/tech/mysql-logo.svg",
       name: "MySQL",
       desc: "An open-source relational database management system that uses SQL.",
+    },
+    {
+      url: "/tech/mongodb.svg",
+      name: "MongoDB",
+      desc: "A popular NoSQL database that uses a document-oriented data model.",
     },
     {
       url: "/tech/prisma-2.svg",
@@ -94,6 +94,11 @@ export default function TechLogos() {
       name: "Firebase",
       desc: "A platform developed by Google for creating mobile and web applications.",
     },
+    {
+      url: "/tech/redux.svg",
+      name: "Redux",
+      desc: "A platform developed by Google for creating mobile and web applications.",
+    },
   ];
   return (
     <div className="w-full grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] place-items-center gap-4 ">
@@ -102,8 +107,7 @@ export default function TechLogos() {
           <DelayOnReveal
             key={i}
             className="dark:bg-white  dark:shadow-green-md p-2 rounded-md flex gap-4 items-center justify-center flex-col  cursor-pointer
-                transition-all hover:scale-110 w-[90px] h-[100px]"
-          >
+                transition-all hover:scale-110 w-[90px] h-[100px]">
             <Image src={logo.url} width={70} height={30} alt="logo" />
           </DelayOnReveal>
         );
