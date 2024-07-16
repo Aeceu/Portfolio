@@ -62,18 +62,22 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="w-full flex flex-col gap-2 p-2 md:p-8">
-        <h1 className="flex items-center gap-2 text-xl dark:text-emerald-400 text-slate-950 font-extrabold">
+        <h1 className="flex items-center gap-2 text-base md:text-xl dark:text-emerald-400 text-slate-950 font-extrabold">
           Impressed ? Interact with me now
           <MoveRight className="w-6 h-6" />
         </h1>
         <span className="flex items-center gap-4">
           <DelayOnReveal className="flex gap-2 w-max  items-center border-2 relative hover:animate-up-down hover:underline border-slate-950 dark:border-white shadow-green-sm ">
-            <Link href="#project-page" className="flex gap-2 px-6 py-4 items-center ">
+            <Link
+              href="#project-page"
+              className="flex gap-2 md:px-6 md:py-4 px-3 py-1.5 text-sm md:text-base items-center ">
               Contact me
             </Link>
           </DelayOnReveal>
           <DelayOnReveal className="flex gap-2 w-max  items-center border-2 relative hover:animate-up-down hover:underline border-slate-950 dark:border-white shadow-green-sm ">
-            <Link href="#project-page" className="flex gap-2 px-6 py-4 items-center ">
+            <Link
+              href="#project-page"
+              className="flex gap-2 md:px-6 md:py-4 px-3 py-1.5 text-sm md:text-base items-center ">
               Email me
             </Link>
           </DelayOnReveal>
