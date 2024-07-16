@@ -11,24 +11,15 @@ export const metadata: Metadata = {
   description: "My Personal Portfolio",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${JosefinSans.className} dark:dark light dark:bg-slate-950`}
-      >
+      <body className={`${JosefinSans.className} dark:dark light dark:bg-slate-950`}>
         <div
-          className="min-h-screen flex  justify-between  
-            scroll-smooth relative "
-        >
+          className="h-screen flex  justify-between  
+            scroll-smooth relative overflow-hidden">
           <AsideBar />
-          <main className="w-full  flex flex-col items-center overflow-x-hidden">
-            {children}
-          </main>
+          <main className="w-full  flex flex-col items-center overflow-y-auto">{children}</main>
         </div>
       </body>
     </html>
