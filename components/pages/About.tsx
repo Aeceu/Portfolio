@@ -62,7 +62,7 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="w-full flex flex-col gap-2 p-2 md:p-8">
-        <h1 className="flex items-center gap-2 text-base md:text-xl dark:text-emerald-400 text-slate-950 font-extrabold">
+        <h1 className="flex items-center gap-2 text-sm md:text-xl dark:text-emerald-400 text-slate-950 font-extrabold">
           Impressed ? Interact with me now
           <MoveRight className="w-6 h-6" />
         </h1>
