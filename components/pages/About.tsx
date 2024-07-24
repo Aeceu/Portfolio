@@ -74,13 +74,6 @@ export default function AboutPage() {
               Contact me
             </Link>
           </DelayOnReveal>
-          <DelayOnReveal className="flex gap-2 w-max  items-center border-2 relative hover:animate-up-down hover:underline border-slate-950 dark:border-white shadow-green-sm ">
-            <Link
-              href="#project-page"
-              className="flex gap-2 md:px-6 md:py-4 px-3 py-1.5 text-sm md:text-base items-center ">
-              Email me
-            </Link>
-          </DelayOnReveal>
         </span>
       </div>
     </div>

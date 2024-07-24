@@ -99,6 +99,16 @@ export default function TechLogos() {
       name: "Redux",
       desc: "A platform developed by Google for creating mobile and web applications.",
     },
+    {
+      url: "/tech/zustand.png",
+      name: "Zustand",
+      desc: "A platform developed by Google for creating mobile and web applications.",
+    },
+    {
+      url: "/tech/flask.svg",
+      name: "Flask",
+      desc: "A platform developed by Google for creating mobile and web applications.",
+    },
   ];
   return (
     <div className="w-full grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] place-items-center gap-4 ">
