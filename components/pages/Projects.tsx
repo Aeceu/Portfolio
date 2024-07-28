@@ -22,32 +22,12 @@ export default function Projectspage() {
 
       <div className="flex flex-wrap items-center justify-center  gap-16 ">
         <ProjectFolder
-          name="Travel Wander"
-          description="A full stack application about travelling to your desired destination."
-          projectImg="/travel-wander/2.png"
-          projectIndex="1"
-          githubUrl="https://travel-wander.vercel.app/"
-          liveUrl="https://travel-wander.vercel.app/"
-          tecnologies={[
-            "react",
-            "typescript",
-            "google map api",
-            "framer motion",
-            "tailwindcss",
-            "zod",
-            "nodejs",
-            "express",
-            "prisma",
-          ]}
-        />
-
-        <ProjectFolder
           name="Rehabify"
           description="A full stack application about rehabilitation of drugs and alcoholaddicts."
           projectImg="/rehabify/1.png"
-          projectIndex="2"
-          githubUrl="https://ts-rehab.vercel.app/"
+          projectIndex="1"
           liveUrl="https://ts-rehab.vercel.app/"
+          githubUrl="https://github.com/Aeceu/ts-rehab-frontend"
           tecnologies={[
             "nextjs",
             "react",
@@ -65,9 +45,9 @@ export default function Projectspage() {
           name="Bubble Sort Visualizer"
           description="A application about bubble sort algorithm and visualize it to see how it works."
           projectImg="/bubble-sort/1.png"
-          projectIndex="3"
-          githubUrl="https://visualsortcraft.vercel.app/"
+          projectIndex="2"
           liveUrl="https://visualsortcraft.vercel.app/"
+          githubUrl="https://github.com/Aeceu/Sorting-Algorithm-Visualizer"
           tecnologies={[
             "vitejs",
             "react",
@@ -82,8 +62,8 @@ export default function Projectspage() {
           name="SociaLite Application"
           description="A social media application where use can create and share post."
           projectImg="/socialite/image.png"
-          projectIndex="4"
-          githubUrl="https://socialite-six.vercel.app/"
+          projectIndex="3"
+          githubUrl="https://github.com/Aeceu/socialite-client"
           liveUrl="https://socialite-six.vercel.app/"
           tecnologies={[
             "vitejs",
@@ -102,8 +82,8 @@ export default function Projectspage() {
           name="KAINAKAP PWD profilling system"
           description="A pwd profilling application where I improved the ui, login and register page for our school project."
           projectImg="/kainakap/image.png"
-          projectIndex="5"
-          githubUrl="https://pwd-kainakap.vercel.app/"
+          projectIndex="4"
+          githubUrl="https://github.com/Aeceu/new_soft_eng"
           liveUrl="https://pwd-kainakap.vercel.app/"
           tecnologies={[
             "vitejs",
@@ -116,6 +96,27 @@ export default function Projectspage() {
             "jwt",
             "shadcnUI",
             "prisma",
+          ]}
+        />
+
+        <ProjectFolder
+          name="StyleLayer Co."
+          description="Full stack e-commerce appliation where user can order and add to cart an item."
+          projectImg="/stylelayer/image.png"
+          projectIndex="5"
+          githubUrl="https://github.com/Aeceu/stylelayer"
+          liveUrl="https://stylelayer.vercel.app/"
+          tecnologies={[
+            "vitejs",
+            "react",
+            "typescript",
+            "tailwindcss",
+            "redux-toolkit",
+            "cloudinary",
+            "jwt",
+            "shadcnUI",
+            "prisma",
+            "postgreSQL",
           ]}
         />
       </div>

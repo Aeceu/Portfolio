@@ -32,6 +32,11 @@ export default function AsideBar() {
         className="transition-all rotate-90 hover:text-emerald-500 hover:scale-125 my-8">
         Projects
       </Link>
+      <Link
+        href="#contact-page"
+        className="transition-all rotate-90 hover:text-emerald-500 hover:scale-125 my-8">
+        Contacts
+      </Link>
     </motion.div>
   );
 }

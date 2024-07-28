@@ -55,6 +55,11 @@ export default function TechLogos() {
       desc: "A JavaScript library used for building user interfaces, particularly for single-page applications.",
     },
     {
+      url: "/tech/react_native.svg",
+      name: "React",
+      desc: "A JavaScript library used for building user interfaces, particularly for single-page applications.",
+    },
+    {
       url: "/tech/tailwind.svg",
       name: "Tailwind CSS",
       desc: "A utility-first CSS framework that streamlines the process of designing and styling websites.",

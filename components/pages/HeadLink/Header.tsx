@@ -10,8 +10,8 @@ export default function Header() {
         className="text-4xl md:text-7xl lg:text-8xl font-extrabold text-emerald-500 mb-4
       dark:[text-shadow:3px_3px_0_rgb(255_255_255_)]
       [text-shadow:3px_3px_0_rgb(2_6_23_)]
-      lg:dark:[text-shadow:5px_5px_0_rgb(255_255_255_)]
       lg:[text-shadow:5px_5px_0_rgb(2_6_23_)]
+      lg:dark:[text-shadow:5px_5px_0_rgb(255_255_255_)]
       ">
         Jose Acebuche
       </DelayOnReveal>
