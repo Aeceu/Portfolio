@@ -46,7 +46,7 @@ export default function NavBar() {
           transition={{ delay: 0.1 }}
           className="border-2 sm:px-8 sm:py-4 px-4 py-2  
                 dark:border-white  border-slate-950 shadow-green-sm   hover:animate-up-down">
-          <a href="/Jose.Acebuche.RESUME.pdf">My Resume</a>
+          <Link href="#contact-page">Request for Resume</Link>
         </motion.button>
       </div>
     </nav>

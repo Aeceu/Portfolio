@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <div
       id="about-page"
-      className="relative min-h-screen flex flex-col lg:items-start items-center p-4 ">
+      className="relative min-h-screen  flex flex-col lg:items-start items-center p-4 ">
       <div className="w-full flex items-center ">
         <DelayOnReveal
           delay={0.2}
@@ -21,47 +21,82 @@ export default function AboutPage() {
         </DelayOnReveal>
         <Divider />
       </div>
-      <div className="w-full flex gap-16 lg:flex-row flex-col-reverse items-center justify-between px-2 md:px-8">
-        <div className="w-full  text-justify flex flex-col gap-4 tracking-widest leading-7">
-          <DelayOnReveal className="flex items-center ">
-            I&apos;m <b className="text-2xl text-emerald-600">Jose Acebuche</b>, a{" "}
-            <b className="text-lg text-orange-400">Software Engineer</b>, and{" "}
-            <b className="text-lg text-orange-400">Full-Stack Developer</b> based in the
-            <b className="text-lg text-red-500">Philippines</b>. My journey in the realm of
-            technology has been a vibrant exploration, from mastering coding languages and
-            algorithms to my current passion for crafting sophisticated solutions that address
-            real-world challenges.
+
+      <div className="w-full flex gap-16 xl:flex-row flex-col-reverse items-center justify-between px-2 md:px-8">
+        <div className="w-full xl:w-3/4  text-justify flex flex-col gap-4 ">
+          <DelayOnReveal
+            className=" relative  flex text-3xl  lg:text-4xl font-extrabold text-emerald-500 mb-2 z-50 
+          bg-white dark:bg-slate-950 lg:tracking-widest
+          lg:dark:[text-shadow:4px_4px_0_rgb(255_255_255_)] lg:[text-shadow:4px_4px_0_rgb(2_6_23_)]
+          dark:[text-shadow:2px_2px_0_rgb(255_255_255_)] [text-shadow:2px_2px_0_rgb(2_6_23_)]">
+            My Development Journey
           </DelayOnReveal>
-          <DelayOnReveal>
-            My satisfaction derives from turning abstract concepts into functional applications.
-            Whether I&apos;m deeply involved in front-end design, architecting robust back-end
-            systems, or optimizing database queries, each development phase fuels my enthusiasm for
-            creating impactful and seamless user experiences.
+          <DelayOnReveal className="text-lg w-full">
+            My journey in the realm of technology has been a vibrant exploration, from mastering
+            coding languages and algorithms to my current passion for crafting sophisticated
+            solutions that address real-world challenges.
           </DelayOnReveal>
-          <DelayOnReveal>
-            Beyond coding, I actively immerse myself in the dynamic tech landscape. Engaging in
-            online tutorials, participating in hackathons, and attending tech meetups are integral
-            to my continuous learning process. When away from the keyboard, I&apos;m an ardent
-            outdoor explorer, leveraging diverse experiences to enhance my well-rounded
-            problem-solving skills.
-          </DelayOnReveal>
-          <DelayOnReveal>
-            Join me on this exhilarating journey of innovation and creativity. Let&apos;s connect
-            with fellow developers, contribute to the global tech community, and shape the future of
-            technology together.
-          </DelayOnReveal>
+
+          <div className="w-full  flex flex-wrap items-center justify-center xl:items-start xl:justify-start gap-12">
+            <DelayOnReveal>
+              <div className="w-[350px] h-[200px] dark:bg-white dark:text-slate-950 border-2 border-slate-950 shadow-green-md flex flex-col p-4">
+                <h1 className="font-extrabold text-4xl  [text-shadow:3px_3px_0_rgb(2_6_23_)] text-emerald-500 ">
+                  3+ years
+                </h1>
+                <p className="mt-2 border-t-2  border-slate-950 ">
+                  Accumulated experience in programming, developing various applications, and honing
+                  coding skills.
+                </p>
+              </div>
+            </DelayOnReveal>
+            <DelayOnReveal>
+              <div className="w-[350px] h-[200px] dark:bg-white dark:text-slate-950 border-2 border-slate-950 shadow-green-md flex flex-col p-4">
+                <h1 className="font-extrabold text-4xl  [text-shadow:3px_3px_0_rgb(2_6_23_)] text-emerald-500">
+                  10+ projects
+                </h1>
+                <p className="mt-2 border-t-2  border-slate-950 ">
+                  Successfully completed over ten projects, demonstrating a wide range of technical
+                  and problem-solving abilities.
+                </p>
+              </div>
+            </DelayOnReveal>
+            <DelayOnReveal>
+              <div className="w-[350px] h-[200px] dark:bg-white dark:text-slate-950 border-2 border-slate-950 shadow-green-md flex flex-col p-4">
+                <h1 className="font-extrabold text-4xl  [text-shadow:3px_3px_0_rgb(2_6_23_)] text-emerald-500">
+                  2 certificates
+                </h1>
+                <p className="mt-2 border-t-2  border-slate-950 ">
+                  Earned two certificates recognizing exceptional programming skills and knowledge
+                  in the field.
+                </p>
+              </div>
+            </DelayOnReveal>
+            <DelayOnReveal>
+              <div className="w-[350px] h-[200px] dark:bg-white dark:text-slate-950 border-2 border-slate-950 shadow-green-md flex flex-col p-4">
+                <h1 className="font-extrabold text-4xl  [text-shadow:3px_3px_0_rgb(2_6_23_)] text-emerald-500">
+                  500+ hours
+                </h1>
+                <p className="mt-2 border-t-2  border-slate-950 ">
+                  Consistently improving and expanding my expertise across different programming
+                  languages and frameworks.
+                </p>
+              </div>
+            </DelayOnReveal>
+          </div>
         </div>
-        <div className="shrink-0 w-[150] h-[150] lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden animate-moving">
-          <Image
-            src={"/1x1.jpg"}
-            alt="img"
-            width={300}
-            height={300}
-            className="w-full h-full object-cover "
-          />
+        <div className="w-full  xl:w-1/4 text-justify flex items-center justify-center">
+          <div className="shrink-0 w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] md:w-[350px] md:h-[350px] rounded-full border-2 border-slate-950 shadow-green-md overflow-hidden animate-moving">
+            <Image
+              src={"/1x1.jpg"}
+              alt="img"
+              width={300}
+              height={300}
+              className="w-full h-full object-cover "
+            />
+          </div>
         </div>
       </div>
-      <div className="w-full flex flex-col gap-2 p-2 md:p-8">
+      {/* <div className="w-full flex flex-col gap-2 p-2 md:p-8">
         <h1 className="flex items-center gap-2 text-sm md:text-xl dark:text-emerald-400 text-slate-950 font-extrabold">
           Impressed ? Interact with me now
           <MoveRight className="w-6 h-6" />
@@ -75,7 +110,7 @@ export default function AboutPage() {
             </Link>
           </DelayOnReveal>
         </span>
-      </div>
+      </div> */}
     </div>
   );
 }
