@@ -67,6 +67,11 @@ export default function TechLogos() {
           name: "Tailwind CSS",
           desc: "A utility-first CSS framework that streamlines the process of designing and styling websites.",
         },
+        {
+          url: "/tech/vue.svg",
+          name: "Vue 3",
+          desc: "A progressive JavaScript framework used for building user interfaces and single-page applications with a reactive and component-based approach.",
+        },
       ],
     },
     {
@@ -155,7 +160,8 @@ export default function TechLogos() {
           bg-white dark:bg-slate-950 tracking-widest
           dark:[text-shadow:2px_2px_0_rgb(255_255_255_)] [text-shadow:2px_2px_0_rgb(2_6_23_)]
           lg:dark:[text-shadow:3px_3px_0_rgb(255_255_255_)] lg:[text-shadow:3px_3px_0_rgb(2_6_23_)]
-          ">
+          "
+          >
             {logo.category}
           </DelayOnReveal>
           <ul className="flex flex-wrap items-center gap-4">
