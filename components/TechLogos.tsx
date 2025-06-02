@@ -147,6 +147,16 @@ export default function TechLogos() {
           name: "Firebase",
           desc: "A platform developed by Google for creating mobile and web applications.",
         },
+        {
+          url: "/tech/docker.svg",
+          name: "Docker",
+          desc: "A platform that enables developers to package applications into containers—standardized executable components combining application source code with the operating system libraries and dependencies required to run that code in any environment.",
+        },
+        {
+          url: "/tech/arch.svg",
+          name: "Arch Linux",
+          desc: "A lightweight and flexible Linux distribution that follows a rolling-release model and is known for its simplicity, transparency, and customization.",
+        },
       ],
     },
   ];
