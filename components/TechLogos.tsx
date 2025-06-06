@@ -127,6 +127,11 @@ export default function TechLogos() {
           name: "Zustand",
           desc: "A state management solution with a small footprint and simple API.",
         },
+        {
+          url: "/tech/pinia.svg",
+          name: "Pinia",
+          desc: "The intuitive Vue store library that is the official state management solution for Vue.js.",
+        },
       ],
     },
     {
