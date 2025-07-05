@@ -6,7 +6,10 @@ import Divider from "../animate/divider";
 
 export default function Techpage() {
   return (
-    <div id="tech-page" className="relative min-h-screen flex flex-col items-center p-4 gap-8">
+    <div
+      id="tech-page"
+      className="relative  flex flex-col items-center p-4 gap-8"
+    >
       <div className="w-full flex items-center justify-center">
         <DelayOnReveal
           delay={0.2}
@@ -14,7 +17,8 @@ export default function Techpage() {
           dark:[text-shadow:3px_3px_0_rgb(255_255_255_)] 
           [text-shadow:3px_3px_0_rgb(2_6_23_)] 
           lg:dark:[text-shadow:5px_5px_0_rgb(255_255_255_)] 
-          lg:[text-shadow:5px_5px_0_rgb(2_6_23_)] ">
+          lg:[text-shadow:5px_5px_0_rgb(2_6_23_)] "
+        >
           Technologies
         </DelayOnReveal>
         <Divider />
@@ -30,11 +34,12 @@ export default function Techpage() {
             <span className="w-full border-[1px] rounded-full border-zinc-500/70  " />
           </div>
           <DelayOnReveal className="2xl:w-3/4 w-full tracking-widest leading-7 text-lg">
-            Over the past <b className="text-emerald-500">three years</b>, I have immersed myself in
-            the dynamic world of coding, dedicating my efforts to mastering and embracing the latest
-            technologies prevalent in the market. Throughout this journey, I have consistently honed
-            and elevated my coding skills, striving for continuous improvement to produce code of
-            the highest quality.
+            Over the past <b className="text-emerald-500">three years</b>, I
+            have immersed myself in the dynamic world of coding, dedicating my
+            efforts to mastering and embracing the latest technologies prevalent
+            in the market. Throughout this journey, I have consistently honed
+            and elevated my coding skills, striving for continuous improvement
+            to produce code of the highest quality.
           </DelayOnReveal>
         </div>
       </div>

@@ -5,7 +5,10 @@ import ProjectFolder from "../ProjectFolder";
 
 export default function Projectspage() {
   return (
-    <div id="project-page" className="relative  min-h-screen flex flex-col items-center p-4 gap-8">
+    <div
+      id="project-page"
+      className="relative  min-h-screen flex flex-col items-center p-4 gap-8"
+    >
       <div className="w-full flex items-center justify-end">
         <DelayOnReveal
           delay={0.2}
@@ -14,7 +17,8 @@ export default function Projectspage() {
           dark:[text-shadow:3px_3px_0_rgb(255_255_255_)] 
           [text-shadow:3px_3px_0_rgb(2_6_23_)] 
           lg:dark:[text-shadow:5px_5px_0_rgb(255_255_255_)] 
-          lg:[text-shadow:5px_5px_0_rgb(2_6_23_)]">
+          lg:[text-shadow:5px_5px_0_rgb(2_6_23_)]"
+        >
           Projects
         </DelayOnReveal>
         <Divider />
@@ -37,7 +41,7 @@ export default function Projectspage() {
             "tailwindcss",
             "mongodb",
             "expressjs",
-            "nodejs",
+            "nodejs"
           ]}
         />
 
@@ -54,7 +58,7 @@ export default function Projectspage() {
             "typescript",
             "tailwindcss",
             "bubble sort",
-            "data structure",
+            "data structure"
           ]}
         />
 
@@ -74,7 +78,7 @@ export default function Projectspage() {
             "zustand",
             "cloudinary",
             "jwt",
-            "NextUI",
+            "NextUI"
           ]}
         />
 
@@ -83,8 +87,8 @@ export default function Projectspage() {
           description="A pwd profilling application where I improved the ui, login and register page for our school project."
           projectImg="/kainakap/image.png"
           projectIndex="4"
-          githubUrl="https://github.com/Aeceu/new_soft_eng"
-          liveUrl="https://pwd-kainakap.vercel.app/"
+          githubUrl="https://github.com/Aeceu/NEW_KAINAKAP"
+          liveUrl="https://new-kainakap.vercel.app/auth/user/login"
           tecnologies={[
             "vitejs",
             "react",
@@ -95,7 +99,7 @@ export default function Projectspage() {
             "cloudinary",
             "jwt",
             "shadcnUI",
-            "prisma",
+            "prisma"
           ]}
         />
 
@@ -116,7 +120,7 @@ export default function Projectspage() {
             "jwt",
             "shadcnUI",
             "prisma",
-            "postgreSQL",
+            "postgreSQL"
           ]}
         />
       </div>
