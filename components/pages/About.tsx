@@ -157,10 +157,10 @@ export default function AboutPage() {
         <div className="w-full  xl:w-1/4 text-justify flex items-center justify-center">
           <div className="shrink-0 w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] md:w-[350px] md:h-[350px] rounded-full border-2 border-slate-950 shadow-green-md overflow-hidden animate-moving">
             <Image
-              src={"/1x1.jpg"}
+              src={"/GRADPIC.jpg"}
               alt="img"
-              width={300}
-              height={300}
+              width={400}
+              height={400}
               className="w-full h-full object-cover "
             />
           </div>
