@@ -92,6 +92,11 @@ export default function TechLogos() {
           name: "Flask",
           desc: "A lightweight WSGI web application framework in Python.",
         },
+        {
+          url: "/tech/redis.svg",
+          name: "Redis",
+          desc: "An open-source, in-memory data structure store used as a database, cache, and message broker.",
+        },
       ],
     },
     {
