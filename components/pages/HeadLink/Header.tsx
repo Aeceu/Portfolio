@@ -16,7 +16,7 @@ export default function Header() {
       >
         Jose Acebuche
       </DelayOnReveal>
-      <DelayOnReveal className="text-sm lg:text-2xl font-bold ">Junior Backend Developer</DelayOnReveal>
+      <DelayOnReveal className="text-sm lg:text-2xl font-bold ">Software Engineer</DelayOnReveal>
       <DelayOnReveal className="text-xs lg:text-lg w-[90%] sm:w-3/4 text-center  ">
         Passionate about leveraging cutting-edge technologies and user-centered design principles to create innovative
         and impactful digital solutions for businesses and individuals alike.
