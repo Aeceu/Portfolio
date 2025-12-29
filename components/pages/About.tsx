@@ -27,11 +27,11 @@ export default function AboutPage() {
               lg:dark:[text-shadow:4px_4px_0_rgb(255_255_255_)] lg:[text-shadow:4px_4px_0_rgb(2_6_23_)]
               dark:[text-shadow:2px_2px_0_rgb(255_255_255_)] [text-shadow:2px_2px_0_rgb(2_6_23_)]"
           >
-            Junior Backend Developer
+            Software Engineer
           </DelayOnReveal>
 
           <DelayOnReveal className="text-base leading-relaxed my-2">
-            Currently working as a <strong>Junior Backend Developer</strong>. Building
+            Currently working as a <strong>Backend Developer</strong>. Building
             <strong> web3 applications</strong> with scalable backend systems using <strong>React</strong>,{" "}
             <strong>Zustand</strong> for state management, and <strong>Tailwind CSS</strong>.
           </DelayOnReveal>
