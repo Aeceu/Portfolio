@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
-import DelayOnReveal from "@/components/animate/DelayReveal";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState("light");
@@ -19,12 +18,12 @@ export default function ThemeToggle() {
   }, [theme]);
 
   return (
-    <DelayOnReveal>
-      <div
-        className="flex gap-2 items-center cursor-pointer hover:scale-125 hover:text-emerald-500 transition-all"
-        onClick={toggle}>
-        {theme === "dark" ? <BiSolidMoon size="1.7em" /> : <BiSolidSun size="1.7em" />}
-      </div>
-    </DelayOnReveal>
+    <button
+      onClick={toggle}
+      className="p-2 rounded-lg hover:bg-accent/10 transition-colors text-muted-foreground hover:text-accent"
+      aria-label="Toggle theme"
+    >
+      {theme === "dark" ? <BiSolidMoon size="1.2em" /> : <BiSolidSun size="1.2em" />}
+    </button>
   );
 }

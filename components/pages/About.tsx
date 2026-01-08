@@ -1,91 +1,84 @@
-import DelayOnReveal from "../animate/DelayReveal";
-import Divider from "../animate/divider";
+"use client";
+import { motion } from "framer-motion";
 import React from "react";
+
+const stats = [
+  { value: "3+", label: "Years Experience" },
+  { value: "10+", label: "Projects Completed" },
+  { value: "2", label: "Certifications" },
+  { value: "500+", label: "Hours of Code" },
+];
 
 export default function AboutPage() {
   return (
-    <div id="about-page" className="relative min-h-screen  flex flex-col lg:items-start items-center p-4 ">
-      <div className="w-full flex items-center ">
-        <DelayOnReveal
-          delay={0.2}
-          className="relative pr-4 flex text-5xl md:text-7xl lg:text-8xl font-extrabold text-emerald-500 mb-4 z-50
-          bg-white dark:bg-slate-950
-          dark:[text-shadow:3px_3px_0_rgb(255_255_255_)] [text-shadow:3px_3px_0_rgb(2_6_23_)]
-          lg:dark:[text-shadow:5px_5px_0_rgb(255_255_255_)] lg:[text-shadow:5px_5px_0_rgb(2_6_23_)]"
+    <div id="about-page" className="relative min-h-screen py-24 px-6">
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="space-y-4 mb-16"
         >
-          About
-        </DelayOnReveal>
-        <Divider />
-      </div>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
+            About Me
+          </h2>
+          <div className="w-20 h-1 bg-accent rounded-full" />
+        </motion.div>
 
-      <div className="w-full flex gap-16 xl:flex-row flex-col-reverse items-center justify-between px-2 md:px-8">
-        <div className="w-full xl:w-3/4  text-justify flex flex-col ">
-          {/* CURRENT ROLE */}
-          <DelayOnReveal
-            className="relative flex text-3xl lg:text-4xl font-extrabold text-emerald-500 z-50
-              bg-white dark:bg-slate-950 lg:tracking-widest
-              lg:dark:[text-shadow:4px_4px_0_rgb(255_255_255_)] lg:[text-shadow:4px_4px_0_rgb(2_6_23_)]
-              dark:[text-shadow:2px_2px_0_rgb(255_255_255_)] [text-shadow:2px_2px_0_rgb(2_6_23_)]"
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="space-y-6"
           >
-            Software Engineer
-          </DelayOnReveal>
+            <div>
+              <h3 className="text-2xl font-bold text-accent mb-4">Software Engineer</h3>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Currently working as a <span className="text-foreground font-semibold">Backend Developer</span>,
+                  building <span className="text-foreground font-semibold">web3 applications</span> with scalable
+                  backend systems using React, Zustand for state management, and Tailwind CSS.
+                </p>
+                <p>
+                  Previously completed a 3-month internship as a{" "}
+                  <span className="text-foreground font-semibold">Frontend Developer</span> at{" "}
+                  <span className="text-foreground font-semibold">Digiplus Interactive Corp.</span>, where I gained
+                  hands-on experience with Vue 3, Pinia, and modern web development workflows.
+                </p>
+                <p>
+                  I&apos;m passionate about creating efficient, scalable solutions and continuously learning new
+                  technologies to stay at the forefront of web development.
+                </p>
+              </div>
+            </div>
+          </motion.div>
 
-          <DelayOnReveal className="text-base leading-relaxed my-2">
-            Currently working as a <strong>Backend Developer</strong>. Building
-            <strong> web3 applications</strong> with scalable backend systems using <strong>React</strong>,{" "}
-            <strong>Zustand</strong> for state management, and <strong>Tailwind CSS</strong>.
-          </DelayOnReveal>
-
-          <DelayOnReveal className="text-base leading-relaxed mb-4">
-            Previously completed a 3-month internship as a <strong>Frontend Developer</strong> at{" "}
-            <strong>Digiplus Interactive Corp.</strong>, where I gained hands-on experience with <strong>Vue 3</strong>,
-            <strong>Pinia</strong>, and modern web development workflows.
-          </DelayOnReveal>
-
-          <div className="w-full  flex flex-wrap items-center justify-center xl:items-start xl:justify-start gap-12 px-8">
-            <DelayOnReveal>
-              <div className="w-[250px] sm:w-[350px] h-[200px] dark:bg-white dark:text-slate-950 border-2 border-slate-950 shadow-green-md flex flex-col p-4">
-                <h1 className="font-extrabold text-4xl  [text-shadow:3px_3px_0_rgb(2_6_23_)] text-emerald-500 ">
-                  3+ years
-                </h1>
-                <p className="mt-2 border-t-2  border-slate-950 ">
-                  Accumulated experience in programming, developing various applications, and honing coding skills.
-                </p>
-              </div>
-            </DelayOnReveal>
-            <DelayOnReveal>
-              <div className="w-[250px] sm:w-[350px] h-[200px] dark:bg-white dark:text-slate-950 border-2 border-slate-950 shadow-green-md flex flex-col p-4">
-                <h1 className="font-extrabold text-4xl  [text-shadow:3px_3px_0_rgb(2_6_23_)] text-emerald-500">
-                  10+ projects
-                </h1>
-                <p className="mt-2 border-t-2  border-slate-950 ">
-                  Successfully completed over ten projects, demonstrating a wide range of technical and problem-solving
-                  abilities.
-                </p>
-              </div>
-            </DelayOnReveal>
-            <DelayOnReveal>
-              <div className="w-[250px] sm:w-[350px] h-[200px] dark:bg-white dark:text-slate-950 border-2 border-slate-950 shadow-green-md flex flex-col p-4">
-                <h1 className="font-extrabold text-4xl  [text-shadow:3px_3px_0_rgb(2_6_23_)] text-emerald-500">
-                  2 certificates
-                </h1>
-                <p className="mt-2 border-t-2  border-slate-950 ">
-                  Earned two certificates recognizing exceptional programming skills and knowledge in the field.
-                </p>
-              </div>
-            </DelayOnReveal>
-            <DelayOnReveal>
-              <div className="w-[250px] sm:w-[350px] h-[200px] dark:bg-white dark:text-slate-950 border-2 border-slate-950 shadow-green-md flex flex-col p-4">
-                <h1 className="font-extrabold text-4xl  [text-shadow:3px_3px_0_rgb(2_6_23_)] text-emerald-500">
-                  500+ hours
-                </h1>
-                <p className="mt-2 border-t-2  border-slate-950 ">
-                  Consistently improving and expanding my expertise across different programming languages and
-                  frameworks.
-                </p>
-              </div>
-            </DelayOnReveal>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="grid grid-cols-2 gap-4"
+          >
+            {stats.map((stat, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="p-6 rounded-xl border border-border bg-card hover:border-accent transition-colors group"
+              >
+                <div className="text-4xl font-bold text-accent mb-2 group-hover:scale-110 transition-transform">
+                  {stat.value}
+                </div>
+                <div className="text-sm text-muted-foreground">{stat.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </div>
     </div>

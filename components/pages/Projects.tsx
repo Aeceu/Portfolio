@@ -1,128 +1,122 @@
+"use client";
 import React from "react";
-import DelayOnReveal from "../animate/DelayReveal";
-import Divider from "../animate/divider";
+import { motion } from "framer-motion";
 import ProjectFolder from "../ProjectFolder";
 
 export default function Projectspage() {
   return (
-    <div
-      id="project-page"
-      className="relative  min-h-screen flex flex-col items-center p-4 gap-8"
-    >
-      <div className="w-full flex items-center justify-end">
-        <DelayOnReveal
-          delay={0.2}
-          className="relative pr-4 flex text-5xl 
-          md:text-7xl lg:text-8xl font-extrabold text-emerald-500 mb-4 z-50 bg-white dark:bg-slate-950
-          dark:[text-shadow:3px_3px_0_rgb(255_255_255_)] 
-          [text-shadow:3px_3px_0_rgb(2_6_23_)] 
-          lg:dark:[text-shadow:5px_5px_0_rgb(255_255_255_)] 
-          lg:[text-shadow:5px_5px_0_rgb(2_6_23_)]"
+    <div id="project-page" className="relative min-h-screen py-24 px-6">
+      <div className="max-w-7xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="space-y-4 mb-16"
         >
-          Projects
-        </DelayOnReveal>
-        <Divider />
-      </div>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
+            Featured Projects
+          </h2>
+          <div className="w-20 h-1 bg-accent rounded-full" />
+          <p className="text-lg text-muted-foreground max-w-2xl">
+            A collection of projects showcasing my skills in full-stack development,
+            from web3 applications to e-commerce platforms.
+          </p>
+        </motion.div>
 
-      <div className="flex flex-wrap items-center justify-center  gap-16 ">
-        <ProjectFolder
-          name="Rehabify"
-          description="A full stack application about rehabilitation of drugs and alcoholaddicts."
-          projectImg="/rehabify/1.png"
-          projectIndex="1"
-          liveUrl="https://ts-rehab.vercel.app/"
-          githubUrl="https://github.com/Aeceu/ts-rehab-frontend"
-          tecnologies={[
-            "nextjs",
-            "react",
-            "typescript",
-            "javascript",
-            "framer motion",
-            "tailwindcss",
-            "mongodb",
-            "expressjs",
-            "nodejs"
-          ]}
-        />
+        <div className="grid md:grid-cols-2 gap-8">
+          <ProjectFolder
+            name="Rehabify"
+            description="A full-stack rehabilitation platform for drug and alcohol addiction support, featuring user management, progress tracking, and resource sharing."
+            projectImg="/rehabify/1.png"
+            projectIndex="1"
+            liveUrl="https://ts-rehab.vercel.app/"
+            githubUrl="https://github.com/Aeceu/ts-rehab-frontend"
+            tecnologies={[
+              "Next.js",
+              "React",
+              "TypeScript",
+              "Framer Motion",
+              "Tailwind CSS",
+              "MongoDB",
+              "Express.js",
+              "Node.js"
+            ]}
+          />
 
-        <ProjectFolder
-          name="Bubble Sort Visualizer"
-          description="A application about bubble sort algorithm and visualize it to see how it works."
-          projectImg="/bubble-sort/1.png"
-          projectIndex="2"
-          liveUrl="https://visualsortcraft.vercel.app/"
-          githubUrl="https://github.com/Aeceu/Sorting-Algorithm-Visualizer"
-          tecnologies={[
-            "vitejs",
-            "react",
-            "typescript",
-            "tailwindcss",
-            "bubble sort",
-            "data structure"
-          ]}
-        />
+          <ProjectFolder
+            name="Bubble Sort Visualizer"
+            description="An interactive algorithm visualizer that demonstrates bubble sort in real-time, helping students understand sorting algorithms through visual representation."
+            projectImg="/bubble-sort/1.png"
+            projectIndex="2"
+            liveUrl="https://visualsortcraft.vercel.app/"
+            githubUrl="https://github.com/Aeceu/Sorting-Algorithm-Visualizer"
+            tecnologies={[
+              "Vite",
+              "React",
+              "TypeScript",
+              "Tailwind CSS",
+              "Algorithms",
+              "Data Structures"
+            ]}
+          />
 
-        <ProjectFolder
-          name="SociaLite Application"
-          description="A social media application where use can create and share post."
-          projectImg="/socialite/image.png"
-          projectIndex="3"
-          githubUrl="https://github.com/Aeceu/socialite-client"
-          liveUrl="https://socialite-six.vercel.app/"
-          tecnologies={[
-            "vitejs",
-            "react",
-            "javascript",
-            "typescript",
-            "tailwindcss",
-            "zustand",
-            "cloudinary",
-            "jwt",
-            "NextUI"
-          ]}
-        />
+          <ProjectFolder
+            name="SociaLite"
+            description="A modern social media platform where users can create, share, and interact with posts, featuring real-time updates and cloud-based media storage."
+            projectImg="/socialite/image.png"
+            projectIndex="3"
+            githubUrl="https://github.com/Aeceu/socialite-client"
+            liveUrl="https://socialite-six.vercel.app/"
+            tecnologies={[
+              "Vite",
+              "React",
+              "TypeScript",
+              "Tailwind CSS",
+              "Zustand",
+              "Cloudinary",
+              "JWT",
+              "NextUI"
+            ]}
+          />
 
-        <ProjectFolder
-          name="KAINAKAP PWD profilling system"
-          description="A pwd profilling application where I improved the ui, login and register page for our school project."
-          projectImg="/kainakap/image.png"
-          projectIndex="4"
-          githubUrl="https://github.com/Aeceu/NEW_KAINAKAP"
-          liveUrl="https://new-kainakap.vercel.app/auth/user/login"
-          tecnologies={[
-            "vitejs",
-            "react",
-            "javascript",
-            "typescript",
-            "tailwindcss",
-            "redux-toolkit",
-            "cloudinary",
-            "jwt",
-            "shadcnUI",
-            "prisma"
-          ]}
-        />
+          <ProjectFolder
+            name="KAINAKAP PWD System"
+            description="A comprehensive PWD profiling system with enhanced UI/UX, secure authentication, and efficient data management for persons with disabilities."
+            projectImg="/kainakap/image.png"
+            projectIndex="4"
+            githubUrl="https://github.com/Aeceu/NEW_KAINAKAP"
+            liveUrl="https://new-kainakap.vercel.app/auth/user/login"
+            tecnologies={[
+              "Vite",
+              "React",
+              "TypeScript",
+              "Tailwind CSS",
+              "Redux Toolkit",
+              "Shadcn UI",
+              "Prisma"
+            ]}
+          />
 
-        <ProjectFolder
-          name="StyleLayer Co."
-          description="Full stack e-commerce appliation where user can order and add to cart an item."
-          projectImg="/stylelayer/image.png"
-          projectIndex="5"
-          githubUrl="https://github.com/Aeceu/stylelayer"
-          liveUrl="https://stylelayer.vercel.app/"
-          tecnologies={[
-            "vitejs",
-            "react",
-            "typescript",
-            "tailwindcss",
-            "redux-toolkit",
-            "cloudinary",
-            "jwt",
-            "shadcnUI",
-            "prisma",
-            "postgreSQL"
-          ]}
-        />
+          <ProjectFolder
+            name="StyleLayer Co."
+            description="A feature-rich e-commerce platform with shopping cart, order management, secure authentication, and seamless payment integration."
+            projectImg="/stylelayer/image.png"
+            projectIndex="5"
+            githubUrl="https://github.com/Aeceu/stylelayer"
+            liveUrl="https://stylelayer.vercel.app/"
+            tecnologies={[
+              "Vite",
+              "React",
+              "TypeScript",
+              "Tailwind CSS",
+              "Redux Toolkit",
+              "Shadcn UI",
+              "Prisma",
+              "PostgreSQL"
+            ]}
+          />
+        </div>
       </div>
     </div>
   );

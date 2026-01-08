@@ -1,47 +1,40 @@
 "use client";
 import React from "react";
-import DelayOnReveal from "../animate/DelayReveal";
+import { motion } from "framer-motion";
 import TechLogos from "../TechLogos";
-import Divider from "../animate/divider";
 
 export default function Techpage() {
   return (
-    <div
-      id="tech-page"
-      className="relative  flex flex-col items-center p-4 gap-8"
-    >
-      <div className="w-full flex items-center justify-center">
-        <DelayOnReveal
-          delay={0.2}
-          className="relative pr-4 flex text-5xl md:text-7xl lg:text-8xl font-extrabold text-emerald-500 mb-4 z-50 bg-white dark:bg-slate-950
-          dark:[text-shadow:3px_3px_0_rgb(255_255_255_)] 
-          [text-shadow:3px_3px_0_rgb(2_6_23_)] 
-          lg:dark:[text-shadow:5px_5px_0_rgb(255_255_255_)] 
-          lg:[text-shadow:5px_5px_0_rgb(2_6_23_)] "
+    <div id="tech-page" className="relative min-h-screen py-24 px-6 bg-muted/30">
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="space-y-4 mb-16"
         >
-          Technologies
-        </DelayOnReveal>
-        <Divider />
-      </div>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
+            Skills & Technologies
+          </h2>
+          <div className="w-20 h-1 bg-accent rounded-full" />
+        </motion.div>
 
-      <div className="w-full  flex flex-col justify-between items-start lg:px-8 gap-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mb-12"
+        >
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
+            Over the past <span className="text-accent font-semibold">three years</span>, I have immersed
+            myself in the dynamic world of coding, mastering modern technologies and frameworks. I&apos;m
+            committed to continuous learning and producing high-quality, maintainable code.
+          </p>
+        </motion.div>
+
         <TechLogos />
-        <div className="w-full">
-          <div className="w-full flex items-center">
-            <h1 className="shrink-0 relative z-50 pr-6 bg-white dark:bg-slate-950 text-emerald-500 font-bold">
-              Technologies & Experience
-            </h1>
-            <span className="w-full border-[1px] rounded-full border-zinc-500/70  " />
-          </div>
-          <DelayOnReveal className="2xl:w-3/4 w-full tracking-widest leading-7 text-lg">
-            Over the past <b className="text-emerald-500">three years</b>, I
-            have immersed myself in the dynamic world of coding, dedicating my
-            efforts to mastering and embracing the latest technologies prevalent
-            in the market. Throughout this journey, I have consistently honed
-            and elevated my coding skills, striving for continuous improvement
-            to produce code of the highest quality.
-          </DelayOnReveal>
-        </div>
       </div>
     </div>
   );
