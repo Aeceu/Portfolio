@@ -1,22 +1,25 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from "next/font/google";
-import NavBar from "@/components/NavBar";
+// import { Toaster } from 'react-hot-toast'
+import { Josefin_Sans } from "next/font/google";
+import AsideBar from "@/components/AsideBar";
 
-const inter = Inter({ subsets: ["latin"] });
+const JosefinSans = Josefin_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Jose Acebuche - Software Engineer",
-  description: "Portfolio of Jose Acebuche, a passionate software engineer specializing in full-stack web development",
+  title: "Jose Acebuche",
+  description: "My Personal Portfolio",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
-        <div className="min-h-screen bg-background">
-          <NavBar />
-          <main className="w-full">{children}</main>
+      <body className={`${JosefinSans.className} dark:dark light dark:bg-slate-950`}>
+        <div
+          className="h-screen flex  justify-between  
+            scroll-smooth relative overflow-hidden">
+          <AsideBar />
+          <main className="w-full  flex flex-col items-center overflow-y-auto">{children}</main>
         </div>
       </body>
     </html>
