@@ -9,7 +9,7 @@ type Props = {
 	projectImg: string;
 	name: string;
 	description: string;
-	projectIndex: string;
+	projectIndex: number;
 	liveUrl: string;
 	githubUrl: string;
 };
